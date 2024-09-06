@@ -26,7 +26,7 @@ const route = createBrowserRouter(
         <Route path='today' element={<Today/>}/>
         <Route path='tommarow' element={<Tommarow/>}/>
         <Route path='homepage' element={<HomeMain/>}>
-          <Route path='' element={<Conte/>}/>
+          <Route path='a' element={<Conte/>}/>
           <Route path='login' element={<LoginForm/>}/>
           <Route path='signup' element={<Signup/>}/>
         </Route>
