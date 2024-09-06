@@ -11,11 +11,12 @@ function AddTodo({ value }) {
 
   useEffect(() => {
     const encryptedSessionId = localStorage.getItem('idofus');
+    // console.log('encryptedSessionId:', encryptedSessionId);
     if (encryptedSessionId !== null) {
       const decryptedId = CryptoJS.AES.decrypt(encryptedSessionId, 'your_secret_key').toString(CryptoJS.enc.Utf8);
       setDecryptedSessionId(decryptedId);
     }
-  }, []);
+  }, []); 
 
   const todoAdded = async (e) => {
     e.preventDefault();
