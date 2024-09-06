@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+  
+  .scrollbar-thumb-rounded::-moz-scrollbar-thumb {
+    border-radius: 10px;
+  }
+  
+  .scrollbar-thumb-rounded::-ms-scrollbar-thumb {
+    border-radius: 10px;
+  }
